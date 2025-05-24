@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import Header from "./components/Header";
 import MainContent from "./components/MainContent";
 import About from "./components/About";
@@ -24,11 +25,15 @@ function App() {
           <Route path="/" element={<MainContent addToCart={addToCart} />} />
           <Route path="/about" element={<About />} />
           <Route
+            path="/products"
+            element={<ProductList addToCart={addToCart} />}
+          />
+          <Route
             path="/products/:id"
             element={<ProductDetail addToCart={addToCart} />}
           />
           <Route
-            path="/products"
+            path="/category/:categoryName"
             element={<ProductList addToCart={addToCart} />}
           />
           <Route

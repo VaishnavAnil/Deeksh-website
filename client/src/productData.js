@@ -3,8 +3,7 @@ const productData = [
     id: 1,
     name: "Elegant Necklace",
     price: 250,
-    image:
-      "https://images.pexels.com/photos/1035683/pexels-photo-1035683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "https://images.pexels.com/photos/1035683/pexels-photo-1035683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     description: "A beautiful necklace with a delicate pendant.",
     variations: ["Gold", "Silver"],
   },

@@ -11,6 +11,7 @@ import {
 import "../App.css";
 import SearchBar from "./SearchBar";
 import JewelryNavbar from "./JewelryNavbar"; // We'll create this component next
+import Logo from "../Assets/Logo/logo.jpg";
 
 function Header() {
   const [darkMode, setDarkMode] = useState(false);
@@ -25,7 +26,9 @@ function Header() {
       <header className={darkMode ? "dark" : ""}>
         <div className="container">
           <div className="logo">
-            <Link to="/">Deeksh</Link> {/* Changed to just Deeksh */}
+            <Link to="./">
+              <img src={Logo} alt="Deeksh Logo" width="80" height="auto" />
+            </Link>
           </div>
           <nav>
             <div className="nav-links">
